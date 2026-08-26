@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#10223d" />
+    <title>AI 实操速记卡</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="回到首页">AI <span>实操速记卡</span></a>
+      <button id="reset-progress" class="text-button" type="button">重置进度</button>
+    </header>
+    <main id="top">
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">人工智能训练师三级 · Python 实操</p>
+        <h1 id="page-title">把考点拆成<br />一张张会用的卡</h1>
+        <p>7 个模块，随时复习。做完自测会即时反馈，并保存在这台设备上。</p>
+        <div class="progress-wrap" aria-label="学习进度"><div id="progress-bar" class="progress-bar"></div></div>
+        <p id="progress-text" class="progress-text">正在读取进度…</p>
+      </section>
+      <section class="module-nav" aria-label="模块导航">
+        <h2>选择模块</h2>
+        <div id="module-list" class="module-list"></div>
+      </section>
+      <section id="module-detail" class="module-detail" aria-live="polite"></section>
+    </main>
+    <template id="code-template"><pre class="code"><code></code></pre></template>
+    <script src="study-data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
