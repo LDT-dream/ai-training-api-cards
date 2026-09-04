@@ -9,8 +9,11 @@
 ## 功能
 
 - 7 个题库模块，包含知识、示例、练习与实考题
+- 独立的[函数闪卡库](function-cards.html)：按分类一次学习一个函数，含参数说明、代码示例、注意点与记忆钩子；支持可见的前后按钮与键盘方向键
 - 6 张原有 SVG 学习卡，AIML 使用原生逻辑卡
 - 每个模块有关键词回忆自测与即时反馈
 - 完成状态保存于浏览器的 localStorage（键：`ai-training-api-cards-progress-v1`）
 
 题库内容来自 `practicalExamSeed.json`，不含任何密钥或外部依赖。
+
+函数闪卡的数据维护在 `function-cards-data.js`；页面不依赖网络或构建工具。
